@@ -10,7 +10,7 @@ install:
   - pip install keyrings.alt
   - free -h
   - top -bn1
-script: py.test --cov-report=term --cov-config=.coveragerc --cov=messages tests --cov=flask_discord
+script: py.test --cov-report=term --cov-config=.coveragerc --cov=messages tests\unit --cov=flask_discord
 after_success:
 - free -h
 - top -bn1
